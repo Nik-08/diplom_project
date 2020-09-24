@@ -6,6 +6,7 @@ elementClosest(window);
 import dropMenu from './modules/dropMenu';
 import textModal from './modules/textModal';
 import callbackForm from './modules/callbackForm';
+import giftModal from './modules/giftModal';
 
 
 
@@ -16,3 +17,5 @@ dropMenu();
 textModal();
 //callbackForm
 callbackForm();
+//giftModal
+giftModal();
