@@ -7,6 +7,7 @@ import dropMenu from './modules/dropMenu';
 import textModal from './modules/textModal';
 import callbackForm from './modules/callbackForm';
 import giftModal from './modules/giftModal';
+import burgerMenu from './modules/burgerMenu';
 
 
 
@@ -19,3 +20,5 @@ textModal();
 callbackForm();
 //giftModal
 giftModal();
+//burgerMenu
+burgerMenu();
