@@ -1,8 +1,6 @@
 const textModal = () => {
   const  headerMain = document.querySelector('.header-main'),
-  popup = document.getElementById('free_visit_form'),
-  formContent = popup.querySelector('.form-content'),
-  closeIcom = popup.querySelector('.close_icon');
+  popup = document.getElementById('free_visit_form');   
   headerMain.addEventListener('click', (event) => {
     let target = event.target;
      if(target.closest('.open-popup')){
