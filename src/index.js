@@ -9,6 +9,9 @@ import callbackForm from './modules/callbackForm';
 import giftModal from './modules/giftModal';
 import burgerMenu from './modules/burgerMenu';
 import toTop from './modules/toTop';
+import headSlider from './modules/headSlider';
+import sliderVideo from './modules/sliderVideo';
+
 
 
 
@@ -26,3 +29,7 @@ giftModal();
 burgerMenu();
 //toTop
 toTop();
+//headerSlider
+headSlider();
+//sliderVideo
+sliderVideo();

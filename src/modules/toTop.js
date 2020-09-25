@@ -1,17 +1,14 @@
 const toTop = () => { 
   const toTop1 = document.querySelector('#totop'),
-  headerMain = document.querySelector('.header-main'),
-  headerSlider = headerMain.querySelector('.header-slider');
-
-  const top = headerMain.getBoundingClientRect().bottom;
+  headSlider = document.querySelector('.head-slider');
+  const bottom = headSlider.getBoundingClientRect().bottom;
   toTop1.style.display = 'none';
-  window.addEventListener('scroll', () => {
-    let height = document.documentElement.clientHeight;  
-    height = pageYOffset;
-      if (top > height) {
-        toTop1.style.display = 'none';
-      } else {
+  window.addEventListener('scroll', () => { 
+    const height = pageYOffset;    
+      if (bottom < height) {
         toTop1.style.display = 'block';
+      } else {
+        toTop1.style.display = 'none';
       }
   });
 };
