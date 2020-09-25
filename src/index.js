@@ -8,6 +8,8 @@ import textModal from './modules/textModal';
 import callbackForm from './modules/callbackForm';
 import giftModal from './modules/giftModal';
 import burgerMenu from './modules/burgerMenu';
+import toTop from './modules/toTop';
+
 
 
 
@@ -22,3 +24,5 @@ callbackForm();
 giftModal();
 //burgerMenu
 burgerMenu();
+//toTop
+toTop();
