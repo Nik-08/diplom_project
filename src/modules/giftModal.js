@@ -1,4 +1,5 @@
 const giftModal = () => {
+  try {
   const  body = document.querySelector('body'),
   gift = document.querySelector('#gift');
   // fixedGift = document.querySelector('.fixed-gift'),
@@ -11,6 +12,7 @@ const giftModal = () => {
       target.closest('img').style.display = 'none';
      }
   });
+  
   gift.addEventListener('click', (event) =>{
     let target = event.target;
     if(target.classList.contains('close_icon') || target.classList.contains('close-btn')){
@@ -22,5 +24,7 @@ const giftModal = () => {
         gift.style.display = 'none';
       }
   });
+  }catch(e) {
+  }
 };
 export default giftModal;

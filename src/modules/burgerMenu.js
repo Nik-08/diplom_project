@@ -1,10 +1,10 @@
 const burgerMenu = () => {
-  const menuButton = document.querySelector('.menu-button'),
-  topMenu = document.querySelector('.top-menu'),
+  const topMenu = document.querySelector('.top-menu'),
+  menuButton = topMenu.querySelector('.menu-button'),
   img = menuButton.querySelector('img'),
   popup = document.querySelector('.popup-menu');
   
-  let top = topMenu.getBoundingClientRect().bottom;
+  let top = topMenu.getBoundingClientRect().top;
    
   window.addEventListener('scroll', () => {
     let height = document.documentElement.clientHeight;  
