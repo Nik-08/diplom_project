@@ -10,11 +10,8 @@ import giftModal from './modules/giftModal';
 import burgerMenu from './modules/burgerMenu';
 import toTop from './modules/toTop';
 import headSlider from './modules/headSlider';
-import sliderVideo from './modules/sliderVideo';
-
-
-
-
+import gallerySlider from './modules/gallerySlider';
+import servicesSlider from './modules/servicesSlider';
 
 
 //dropMenu
@@ -31,5 +28,7 @@ burgerMenu();
 toTop();
 //headerSlider
 headSlider();
-//sliderVideo
-sliderVideo();
+//gallerySlider
+gallerySlider();
+//servicesSlider
+servicesSlider();
