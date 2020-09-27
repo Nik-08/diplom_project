@@ -11,7 +11,10 @@ import burgerMenu from './modules/burgerMenu';
 import toTop from './modules/toTop';
 import headSlider from './modules/headSlider';
 import gallerySlider from './modules/gallerySlider';
+import sendForm from './modules/sendForm';
 import servicesSlider from './modules/servicesSlider';
+import calc from "./modules/calc";
+
 
 
 //dropMenu
@@ -30,5 +33,9 @@ toTop();
 headSlider();
 //gallerySlider
 gallerySlider();
+//sendForm
+sendForm();
 //servicesSlider
 servicesSlider();
+//calc
+calc();
