@@ -21,13 +21,13 @@ const calc = () => {
         period.forEach(item => {
           if (item.checked) {
             if (item.value === '1') {
-              priceTotal.textContent = '1990';
+              priceTotal.textContent = '1999';
             } else if (item.value === '6') {
-              priceTotal.textContent = '9990';
+              priceTotal.textContent = '9900';
             } else if (item.value === '9') {
-              priceTotal.textContent = '13990';
+              priceTotal.textContent = '13900';
             } else if (item.value === '12') {
-              priceTotal.textContent = '19990';
+              priceTotal.textContent = '19900';
             }
           }
         });
@@ -37,7 +37,7 @@ const calc = () => {
         period.forEach(item => {
           if (item.checked) {
             if (item.value === '1') {
-              priceTotal.textContent = '2990';
+              priceTotal.textContent = '2999';
             } else if (item.value === '6') {
               priceTotal.textContent = '14990';
             } else if (item.value === '9') {

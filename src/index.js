@@ -14,6 +14,7 @@ import gallerySlider from './modules/gallerySlider';
 import sendForm from './modules/sendForm';
 import servicesSlider from './modules/servicesSlider';
 import calc from "./modules/calc";
+import maskPhone from "./modules/maskPhone";
 
 
 
@@ -39,3 +40,5 @@ sendForm();
 servicesSlider();
 //calc
 calc();
+//maskPhone
+maskPhone();
