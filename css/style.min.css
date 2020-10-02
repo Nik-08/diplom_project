@@ -1016,7 +1016,7 @@ header .head .club-select .clubs-list ul {
   position: absolute;
   top: 60px;
   left: 0;
-  z-index: 100;
+  z-index: 999;
   background-color: #381b35;
   padding: 15px;
   border: 1px solid #ffd11a;
@@ -1310,7 +1310,7 @@ nav.popup-menu .close-menu-btn img {
 
 .main-slider .slide .slide-text {
   position: relative;
-  z-index: 1001
+  z-index: 998
 }
 
 .main-slider .slide .slide-text .offer-head {

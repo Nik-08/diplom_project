@@ -111,7 +111,7 @@ const sendForm = () => {
         body[key] = val;
       });
 
-      if ((checkBox && !checkBox.checked) || ((inputText && inputText.value === '') || inputTel.value === '')) {
+      if ((checkBox && !checkBox.checked) || (inputText && inputText.value === '') || (inputTel.value === '')) {
         p.textContent = checkMessage;
         h4.textContent = "Oops!";
         popUpMessage.style.display = "block";

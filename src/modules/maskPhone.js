@@ -1,5 +1,7 @@
 function maskPhone() {
-  const inputItem = document.querySelectorAll('[name=phone]');
+  const inputItem = document.querySelectorAll('[name=phone]'),
+    btn = document.querySelectorAll('[type=submit]');
+
 
   function setCursorPosition(pos, elem) {
     elem.focus();
@@ -19,15 +21,32 @@ function maskPhone() {
       i = 0,
       def = matrix.replace(/\D/g, ""),
       val = this.value.replace(/\D/g, "");
+
     if (def.length >= val.length) {
       val = def;
+    }
+    if (val.length < 11) {
+      btn.forEach(e => {
+        e.setAttribute('disabled', true);
+      });
+      inputItem.forEach(n => {
+        n.style.color = 'red';
+      });
+    } else {
+      btn.forEach(e => {
+        e.removeAttribute('disabled', false);
+      });
+      inputItem.forEach(n => {
+        n.style.color = '';
+      });
     }
     this.value = matrix.replace(/./g, function (a) {
       return /[_\d]/.test(a) && i < val.length ? val.charAt(i++) : i >= val.length ? "" : a;
     });
-    if (event.type == "blur") {
-      if (this.value.length == 2) {
+    if (event.type === "blur") {
+      if (this.value.length === 2) {
         this.value = "";
+        console.log(this.value);
       }
     } else {
       setCursorPosition(this.value.length, this);
